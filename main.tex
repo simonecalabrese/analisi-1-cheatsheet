@@ -5,13 +5,30 @@
 \usepackage{ifthen}
 \usepackage[landscape]{geometry}
 \usepackage[colorlinks=true,citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage{array}
+
+\renewcommand{\arraystretch}{1.5}
 
 
 \ifthenelse{\lengthtest { \paperwidth = 11in}}
-    { \geometry{top=.5in,left=.5in,right=.5in,bottom=.5in} }
+    { \geometry{
+        top=.35in,
+        left=.35in,
+        right=.35in,
+        bottom=.35in} }
 	{\ifthenelse{ \lengthtest{ \paperwidth = 297mm}}
-		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
-		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+		{\geometry{
+            top=8mm,
+            left=8mm,
+            right=8mm,
+            bottom=8mm
+            } }
+		{\geometry{
+            top=8mm,
+            left=8mm,
+            right=8mm,
+            bottom=8mm
+            } }
 	}
 \pagestyle{empty}
 \makeatletter
@@ -37,7 +54,7 @@
 \raggedright
 \footnotesize
 \begin{center}
-     \Large{\textbf{Elementi di Analisi 1 }} \\
+\Large{\textbf{Elementi di Analisi 1 }} \\
 \end{center}
 \begin{multicols}{3}
 \setlength{\premulticols}{1pt}
@@ -142,6 +159,8 @@
     $ (r(\cos \theta + i \sin \theta))^n = r^n (\cos (n\theta) + i \sin (n\theta))$ & Teorema di De Moivre \\
     $ r = \sqrt{a^2 + b^2}, \quad \theta = \arctan\left(\frac{b}{a}\right) $ \\
 \end{tabular}
+
+\vspace{3mm}
 
 \vfill
 \hrule
