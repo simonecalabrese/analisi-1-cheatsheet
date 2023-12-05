@@ -99,7 +99,7 @@
 
 \vspace{1mm}
 
-\section{Limiti}
+\section{Limiti e funzioni}
 \vspace{1mm}
 \subsection{Proprietà}
 \begin{flalign*}
@@ -110,26 +110,57 @@
     & \lim_{{x \to a}} [f(g(x))] = \lim_{{x \to a}} f(g(x)) &\\
     & \lim_{{x \to a}} f(x)^{g(x)} = \lim_{{x \to a}} e^{\ln [f(x)] g(x)} &\\
 \end{flalign*}
-\subsection{Limiti notevoli}
-\vspace{2mm}
-\begin{multicols}{2}
-    \begin{flalign*}
-        & \lim_{x \rightarrow 0} \frac{\ln(1+x)}{x} = 1 &\\
-        & \lim_{x \rightarrow 0} \frac{\log_a(1+x)}{x} = \frac{1}{\ln(a)} &\\
-        & \lim_{x \rightarrow 0} \frac{e^x - 1}{x} = 1 &\\
-        & \lim_{x \rightarrow 0} \frac{a^x - 1}{x} = \ln(a) &\\
-        & \lim_{x \rightarrow \pm \infty} \big(1 + \frac{\alpha}{x}\big)^x = e^{\alpha} &\\
-        & \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a &\\
-    \end{flalign*}
-    \columnbreak
-    \begin{flalign*}
-        & \lim_{x \rightarrow 0} \frac{sin(x)}{x} = 1 &\\
-        & \lim_{x \rightarrow 0} \frac{1 - cos(x)}{x^2} = \frac{1}{2} &\\
-        & \lim_{x \rightarrow 0} \frac{\tan(x)}{x} = 1 &\\
-        & \lim_{x \rightarrow 0} \frac{\arcsin(x)}{x} = 1 &\\
-        & \lim_{x \rightarrow 0} \frac{\arctan(x)}{x} = 1 &\\
-    \end{flalign*}
-\end{multicols}
+\begin{minipage}{0.27\textwidth}
+    \scriptsize 
+    \subsection{Punto di accumulazione}
+    Si definisce $x_0$ \textbf{punto di accumulazione} di un insieme numerico $A \subseteq \mathbb{R}$ un numero reale $x_0 \in \mathbb{R}$ che puo' anche non appartenere ad $A$, se comunque si prenda un intorno di $x_0$, esso contiene almeno un punto $a \in A$.
+    
+    \subsubsection{Punto interno}
+    Si definisce $x_0$ \textbf{punto interno} di un insieme numerico $\textbf{A} \subseteq \mathbb{R}$, se esiste un intorno completo di $x_0$ costituito interamente da elementi di $\textbf{A}$.
+
+    \subsubsection{Continuità nel punto}
+    Una funzione $f$ definita in un intervallo $(a,b)$ è continua nel punto $x_0 \in (a,b)$, interno all'intervallo, se: $ \lim_{x \rightarrow x_0} f(x) = f(x_0) $.
+
+    \subsubsection{Punto di frontiera}
+    Si definisce $x_0$ \textbf{punto di frontiera} (o punto estremo) di un insieme numerico $\textbf{A} \subseteq \mathbb{R}$, se comunque si prenda un intorno completo di $x_0$, contenga sia elementi appartenenti ad $\textbf{A}$ che elementi non appartenenti ad $\textbf{A}$.
+
+    \subsubsection{Funzione continua}
+    Una funzione $f$ definita in un intervallo $(a,b)$ si definisce continua se è continua per ogni $x \in (a,b)$.
+
+    \subsubsection{Teorema della permanenza del segno}
+    Se una funzione $f$ ammette un limite non nullo per $x \rightarrow x_0$ allora esiste un intorno di $x_0$ nel quale la funzione mantiene lo stesso segno del limite.
+
+    \subsubsection{Teorema di esistenza degli zeri}
+    Se in una funzione reale $f$, definita in un intervallo $(a,b)$ e continua in un punto $x_0 \in (a,b)$, comunque si prenda un intorno di $x_0$, se la funzione in esso assume sempre valori positivi o negativi, allora $f(x_0) = 0$
+
+    \subsubsection{Teorema di Weierstrass}
+    Una funzione reale $f$ definita e continua in un intervallo chiuso e limitato $[a,b]$ è sempre dotata di minimo e massimo.
+
+    \subsubsection{Teorema di Lagrange}
+    Data una funzione reale $f$ definita e continua in $[a,b]$ e derivabile in $]a,b[$:
+    $$ \exists \epsilon \in ]a,b[ : f(b) - f(a) = (b - a)f'(\epsilon) $$
+
+    \subsubsection{Teorema di Rolle}
+    Data una funzione reale $f$ definita e continua in $[a,b]$ e derivabile in $]a,b[$, se $f(a) = f(b)$:
+    $$ \exists \epsilon \in ]a,b[ : f'(\epsilon) = 0 $$
+
+    \subsubsection{Teorema di l'Hopital}
+    Date due funzioni reali $f$ e $g$ definite e continue in $[a,b]$ e derivabili in $]a,b[$, se:
+    $$ \exists x_0 [a,b] : f(x_0) = g(x_0) = 0 \land g'(x) \ne 0, \forall x \ne x_0 $$
+    allora:
+    $$ se \exists \lim_{x \rightarrow x_0} \frac{f'(x)}{g'(x)} \Rightarrow \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = \lim_{x \rightarrow x_0} \frac{f'(x)}{g'(x)} $$
+\end{minipage}
+\subsection{\hspace{.8cm} Limiti notevoli}
+\vspace{1mm}
+\hspace{.8cm}
+\begin{tabular}{l l}
+    $ \lim_{x \rightarrow 0} \frac{\ln(1+x)}{x} = 1 $ & $ \lim_{x \rightarrow 0} \frac{sin(x)}{x} = 1 $ \\
+    $ \lim_{x \rightarrow 0} \frac{\log_a(1+x)}{x} = \frac{1}{\ln(a)} $ & $ \lim_{x \rightarrow 0} \frac{1 - cos(x)}{x^2} = \frac{1}{2} $ \\
+    $ \lim_{x \rightarrow 0} \frac{e^x - 1}{x} = 1 $ & $ \lim_{x \rightarrow 0} \frac{\tan(x)}{x} = 1 $ \\
+    $ \lim_{x \rightarrow 0} \frac{a^x - 1}{x} = \ln(a) $ & $ \lim_{x \rightarrow 0} \frac{\arcsin(x)}{x} = 1 $ \\
+    $ \lim_{x \rightarrow \pm \infty} \big(1 + \frac{\alpha}{x}\big)^x = e^{\alpha} $ & $ \lim_{x \rightarrow 0} \frac{\arctan(x)}{x} = 1 $ \\
+    $ \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a $ & $ $ \\
+\end{tabular}
 \vspace{1mm}
 \subsection{\hspace{.8cm} Sviluppi di Taylor o Maclaurin}
 \vspace{1mm}
@@ -163,12 +194,10 @@
     $ \sqrt{z} \Rightarrow z_k = \sqrt{r}(\cos \big(\frac{\theta + 2k\pi}{2}\big) + i \sin \big(\frac{\theta + 2k\pi}{2}\big) ), 0\le k<2  $ & Radice complessa\\
 \end{tabular}
 
-\vspace{4mm}
 
-\vfill
+\vspace{3mm}
 \hrule
 \smallskip
-
 \noindent Simone Calabrese, Università di Catania, A.A. 2022/2023 \hfill  \href{http://simonecalabrese.com/}{\color{blue}{simonecalabrese.com}}\\
 
 \end{multicols}
