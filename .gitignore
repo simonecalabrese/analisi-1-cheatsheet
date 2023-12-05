@@ -1,4 +1,4 @@
 *
 !*.tex
-!.md
-!.gitignore
+!*.md
+!*.gitignore
