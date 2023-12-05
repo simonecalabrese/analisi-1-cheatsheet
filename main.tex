@@ -48,6 +48,10 @@
 \setcounter{secnumdepth}{0}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt plus 0.5ex}
+\setlength{\premulticols}{1pt}
+\setlength{\postmulticols}{1pt}
+\setlength{\multicolsep}{1pt}
+\setlength{\columnsep}{-4cm}
 % -----------------------------------------------------------------------
 
 \begin{document}
@@ -57,10 +61,6 @@
 \Large{\textbf{Elementi di Analisi 1 }} \\
 \end{center}
 \begin{multicols}{3}
-\setlength{\premulticols}{1pt}
-\setlength{\postmulticols}{1pt}
-\setlength{\multicolsep}{1pt}
-\setlength{\columnsep}{2pt}
 
 \section{Goniometria}
 \vspace{1mm}
@@ -111,28 +111,29 @@
     & \lim_{{x \to a}} f(x)^{g(x)} = \lim_{{x \to a}} e^{\ln [f(x)] g(x)} &\\
 \end{flalign*}
 \subsection{Limiti notevoli}
-\vspace{1mm}
-\begin{equation*}
-    \begin{aligned}
+\vspace{2mm}
+\begin{multicols}{2}
+    \begin{flalign*}
         & \lim_{x \rightarrow 0} \frac{\ln(1+x)}{x} = 1 &\\
         & \lim_{x \rightarrow 0} \frac{\log_a(1+x)}{x} = \frac{1}{\ln(a)} &\\
         & \lim_{x \rightarrow 0} \frac{e^x - 1}{x} = 1 &\\
         & \lim_{x \rightarrow 0} \frac{a^x - 1}{x} = \ln(a) &\\
         & \lim_{x \rightarrow \pm \infty} \big(1 + \frac{\alpha}{x}\big)^x = e^{\alpha} &\\
         & \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a &\\
-    \end{aligned}
-    \hspace{12mm}
-    \begin{aligned}
+    \end{flalign*}
+    \columnbreak
+    \begin{flalign*}
         & \lim_{x \rightarrow 0} \frac{sin(x)}{x} = 1 &\\
         & \lim_{x \rightarrow 0} \frac{1 - cos(x)}{x^2} = \frac{1}{2} &\\
         & \lim_{x \rightarrow 0} \frac{\tan(x)}{x} = 1 &\\
         & \lim_{x \rightarrow 0} \frac{\arcsin(x)}{x} = 1 &\\
         & \lim_{x \rightarrow 0} \frac{\arctan(x)}{x} = 1 &\\
-    \end{aligned}
-\end{equation*}
+    \end{flalign*}
+\end{multicols}
 \vspace{1mm}
-\subsection{Sviluppi di Taylor o Maclaurin}
+\subsection{\hspace{.8cm} Sviluppi di Taylor o Maclaurin}
 \vspace{1mm}
+\hspace{.8cm}
 \begin{tabular}{l l}
    $ e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + ... $ & $ \mbox{per } x \rightarrow 0 $ \\
    $ \alpha^x = 1 + x \ln \alpha + \frac{x^2}{2!} \ln \alpha + \frac{x^3}{3!} \ln \alpha + \frac{x^4}{4!} \ln \alpha + ... $ & $ \mbox{per } x \rightarrow 0 $ \\
@@ -147,9 +148,10 @@
 \end{tabular}
 
 \vspace{1mm}
- 
-\section{Numeri complessi} 
+
+\section{\hspace{.8cm} Numeri complessi} 
 \vspace{1mm}
+\hspace{.8cm}
 \begin{tabular}{l l}
     $ z = a + bi, \quad a, b \in \mathbb{R}, \quad i^2 = -1 $ & Definizioni di base \\
     $ |z| = \sqrt{a^2 + b^2} $ & Modulo \\
@@ -158,9 +160,10 @@
     $ re^{i\theta} = r(\cos \theta + i \sin \theta) $ &   Formula di Eulero \\
     $ (r(\cos \theta + i \sin \theta))^n = r^n (\cos (n\theta) + i \sin (n\theta))$ & Teorema di De Moivre \\
     $ r = \sqrt{a^2 + b^2}, \quad \theta = \arctan\left(\frac{b}{a}\right) $ \\
+    $ \sqrt{z} \Rightarrow z_k = \sqrt{r}(\cos \big(\frac{\theta + 2k\pi}{2}\big) + i \sin \big(\frac{\theta + 2k\pi}{2}\big) ), 0\le k<2  $ & Radice complessa\\
 \end{tabular}
 
-\vspace{3mm}
+\vspace{4mm}
 
 \vfill
 \hrule
