@@ -46,33 +46,44 @@
 \setlength{\columnsep}{2pt}
 
 \section{Goniometria}
+\vspace{1mm}
 \subsection{Identità basilari}
-\begin{flalign*}
-    & \sin^2(x) + \cos^2(x) = 1 &\\
-    & \tan(x) = \frac{\sin(x)}{\cos(x)} &\\
-    & \sec(x) = \frac{1}{\cos(x)} &\\
-    & \csc(x) = \frac{1}{\sin(x)} &\\
-    & \cot(x) = \frac{1}{\tan(x)} = \frac{\cos(x)}{\sin(x)} &\\
-    & \sin(-x) = -\sin(x) &\\
-    & \cos(-x) = \cos(x) &\\
-\end{flalign*}
+\vspace{1mm}
+\begin{tabular}{l l}
+    $\sin^2(x) + \cos^2(x) = 1$ & Identità fondamentale  \\
+    $ \tan(x) = \frac{\sin(x)}{\cos(x)}$ & Tangente \\
+    $ \sec(x) = \frac{1}{\cos(x)}$ & Secante \\
+    $ \csc(x) = \frac{1}{\sin(x)}$ & Cosecante \\
+    $ \cot(x) = \frac{1}{\tan(x)} = \frac{\cos(x)}{\sin(x)}$ & Cotangente \\
+    $ \sin(-x) = -\sin(x)$ & Seno \\
+    $ \cos(-x) = \cos(x)$  & Coseno \\
+\end{tabular}
+
+\vspace{1mm}
 
 \subsection{Addizione e sottrazione}
-\begin{flalign*}
-    & \sin(x \pm y) = \sin(x)\cos(y) \pm \cos(x)\sin(y) &\\
-    & \cos(x \pm y) = \cos(x)\cos(y) \mp \sin(x)\sin(y)
-\end{flalign*}
+\vspace{1mm}
+\begin{tabular}{l}
+    $ \sin(x \pm y) = \sin(x)\cos(y) \pm \cos(x)\sin(y) $ \\
+    $ \cos(x \pm y) = \cos(x)\cos(y) \mp \sin(x)\sin(y) $ \\
+\end{tabular}
+
+\vspace{1mm}
 
 \subsection{Duplicazione e bisezione}
-\begin{flalign*}
-    & \sin(2x) = 2 \sin(x) \cos(x) &\\
-    & \cos(2x) = \cos^2(x) - \sin^2(x) &\\
-    & \sin^2(x) = \frac{1 - cos(2x)}{2} &\\
-    & \cos^2(x) = \frac{1 + cos(2x)}{2} &\\
-    & \tan^2(x) = \frac{1 - cos(2x)}{1 + cos(2x)}
-\end{flalign*}
+\vspace{1mm}
+\begin{tabular}{l}
+    $ \sin(2x) = 2 \sin(x) \cos(x) $ \\
+    $ \cos(2x) = \cos^2(x) - \sin^2(x) $ \\
+    $ \sin^2(x) = \frac{1 - cos(2x)}{2} $ \\
+    $ \cos^2(x) = \frac{1 + cos(2x)}{2} $ \\
+    $ \tan^2(x) = \frac{1 - cos(2x)}{1 + cos(2x)} $ \\
+\end{tabular}
+
+\vspace{1mm}
 
 \section{Limiti}
+\vspace{1mm}
 \subsection{Proprietà}
 \begin{flalign*}
     & \lim_{{x \to a}} c = c, \quad \lim_{{x \to a}} x = a, \quad \lim_{{x \to a}} x^n = a^n &\\
@@ -104,31 +115,33 @@
 \end{equation*}
 \vspace{1mm}
 \subsection{Sviluppi di Taylor o Maclaurin}
-\begin{align*}
-    & e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + ... \hspace{8mm} \mbox{per } x \rightarrow 0 \\
-    & \alpha^x = 1 + x \ln \alpha + \frac{x^2}{2!} \ln \alpha + \frac{x^3}{3!} \ln \alpha + \frac{x^4}{4!} \ln \alpha + ... \hspace{8mm} \mbox{per } x \rightarrow 0 \\
-    & \log(1 + x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \frac{x^5}{5} - ... \hspace{8mm} \mbox{per } x \rightarrow 0 \\
-    & \sin(x) = x - \frac{x^3}{3!} - \frac{x^7}{7!} + ... \hspace{8mm} \mbox{per } x \rightarrow 0 \\
-    & \cos(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + ... \hspace{8mm} \mbox{per } x \rightarrow 0 \\
-    & \tan(x) = x + \frac{x^3}{3} + \frac{2x^5}{15} + o(x^6) \hspace{8mm} \mbox{per } x \rightarrow 0 \\
-    & \arctan(x) = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + ...  \hspace{8mm} \mbox{per } x \rightarrow 0 \\
-    & \arcsin(x) = x + \frac{x^3}{6} + \frac{3x^5}{40} + o(x^6)  \hspace{8mm} \mbox{per } x \rightarrow 0 \\
-    & (1 + x)^{\alpha} = 1 + \alpha x + \frac{\alpha (\alpha - 1)}{2}x^2 + \frac{\alpha (\alpha - 1)(\alpha - 2)}{6}x^3 + o(x^3) \hspace{8mm} \mbox{per } x \rightarrow 0 \\
-    & \sqrt{1 + x} = (1+x)^{\frac{1}{2}} = 1 + \frac{x}{2} - \frac{x^2}{8} + \frac{x^3}{16} + o(x^3)  \hspace{8mm} \mbox{per } x \rightarrow 0 \\
-\end{align*}
+\vspace{1mm}
+\begin{tabular}{l l}
+   $ e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + ... $ & $ \mbox{per } x \rightarrow 0 $ \\
+   $ \alpha^x = 1 + x \ln \alpha + \frac{x^2}{2!} \ln \alpha + \frac{x^3}{3!} \ln \alpha + \frac{x^4}{4!} \ln \alpha + ... $ & $ \mbox{per } x \rightarrow 0 $ \\
+   $ \log(1 + x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \frac{x^5}{5} - ... $ & $ \mbox{per } x \rightarrow 0 $ \\
+   $ \sin(x) = x - \frac{x^3}{3!} - \frac{x^7}{7!} + ... $ & $ \mbox{per } x \rightarrow 0 $ \\
+   $ \cos(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + ... $ & $ \mbox{per } x \rightarrow 0 $ \\
+   $ \tan(x) = x + \frac{x^3}{3} + \frac{2x^5}{15} + o(x^6) $ & $ \mbox{per } x \rightarrow 0 $ \\
+   $ \arctan(x) = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + ...  $ & $ \mbox{per } x \rightarrow 0 $ \\
+   $ \arcsin(x) = x + \frac{x^3}{6} + \frac{3x^5}{40} + o(x^6)  $ & $ \mbox{per } x \rightarrow 0 $ \\
+   $ (1 + x)^{\alpha} = 1 + \alpha x + \frac{\alpha (\alpha - 1)}{2}x^2 + \frac{\alpha (\alpha - 1)(\alpha - 2)}{6}x^3 + o(x^3) $ & $ \mbox{per } x \rightarrow 0 $ \\
+   $ \sqrt{1 + x} = (1+x)^{\frac{1}{2}} = 1 + \frac{x}{2} - \frac{x^2}{8} + \frac{x^3}{16} + o(x^3)  $ & $ \mbox{per } x \rightarrow 0 $ \\
+\end{tabular}
 
-
+\vspace{1mm}
  
 \section{Numeri complessi} 
-\begin{flalign*}
-    & z = a + bi, \quad a, b \in \mathbb{R}, \quad i^2 = -1 \hspace{16mm} \mbox{ Definizioni di base} &\\
-    & |z| = \sqrt{a^2 + b^2} \hspace{38.5mm} \mbox{ Modulo} &\\
-    & \bar{z} = a - bi \hspace{45mm}  \mbox{ Coniugato} &\\
-    & z = r(\cos \theta + i \sin \theta), \quad r = |z|, \quad \theta = \text{arg}(z) \hspace{1.5mm}  \mbox{ Forma polare} &\\
-    & re^{i\theta} = r(\cos \theta + i \sin \theta) \hspace{28.5mm}  \mbox{ Formula di Eulero} &\\
-    & (r(\cos \theta + i \sin \theta))^n = r^n (\cos (n\theta) + i \sin (n\theta)) \mbox{ Teorema di De Moivre} &\\
-    & r = \sqrt{a^2 + b^2}, \quad \theta = \arctan\left(\frac{b}{a}\right) &\\
-\end{flalign*}
+\vspace{1mm}
+\begin{tabular}{l l}
+    $ z = a + bi, \quad a, b \in \mathbb{R}, \quad i^2 = -1 $ & Definizioni di base \\
+    $ |z| = \sqrt{a^2 + b^2} $ & Modulo \\
+    $ \bar{z} = a - bi $ & Coniugato \\
+    $ z = r(\cos \theta + i \sin \theta), \quad r = |z|, \quad \theta = \text{arg}(z) $ & Forma polare \\
+    $ re^{i\theta} = r(\cos \theta + i \sin \theta) $ &   Formula di Eulero \\
+    $ (r(\cos \theta + i \sin \theta))^n = r^n (\cos (n\theta) + i \sin (n\theta))$ & Teorema di De Moivre \\
+    $ r = \sqrt{a^2 + b^2}, \quad \theta = \arctan\left(\frac{b}{a}\right) $ \\
+\end{tabular}
 
 \vfill
 \hrule
